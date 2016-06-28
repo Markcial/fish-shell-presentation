@@ -2,6 +2,10 @@ import React from "react";
 
 import fish from 'url-loader?mimetype=image/png!./media/blinky.png';
 import fisherman from 'url-loader?mimetype=image/png!./media/Horatio_McCallister.png';
+import fisherman_website from 'url-loader?mimetype=image/png!./media/fisherman_website.png';
+import bart_hand_testing from 'url-loader?mimetype=image/gif!./media/stop_testing_by_hand.gif';
+import hackerman from 'url-loader?mimetype=image/gif!./media/hackerman.gif';
+import fsociety from 'url-loader?mimetype=image/gif!./media/fsociety.gif';
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
@@ -17,7 +21,7 @@ const theme = createTheme({
   tertiary: "#EC276D"
 });
 
-import {Header, Asciinema, Footer} from 'corporative/ui';
+import {Header, Asciinema, RemoteContent, Footer} from 'corporative/ui';
 
 // Import Spectacle Core tags
 import {
@@ -51,15 +55,17 @@ export default class FishShellSpectacle extends React.Component {
             <Heading size={.3} textColor="primary">
                 <Appear fid="1"><span>Some people says that the sea is plenty of fish</span></Appear>
                 <Appear fid="2"><span>, but none as this!</span></Appear>
+                <Appear fid="3">
+                  <img src={fish} height="150px" />
+                </Appear>
             </Heading>
-            <Appear fid="3">
-              <img src={fish} />
-            </Appear>
+            <br /><br /><br />
             <Appear fid="4">
-              <span>Sorry, i mean this one</span>
+              <span>Sorry, i meant this one</span>
             </Appear>
+            <br />
             <Appear fid="5">
-              <img src="https://fishshell.com/assets/img/screenshots/scripting.png" />
+              <img src="https://fishshell.com/assets/img/screenshots/scripting.png" height="350px" />
             </Appear>
             <Footer>1</Footer>
           </Slide>
@@ -67,10 +73,10 @@ export default class FishShellSpectacle extends React.Component {
             <Header>2</Header>
             <b>Why do i should use fish, instead of another shells?</b>
             <List>
-              <ListItem>Full fledged autosuggestion support, (you can even roll your own)</ListItem>
-              <ListItem>Sane scripting, stop feeling like writting perl, shell scripts now makes sense.</ListItem>
-              <ListItem>Web based configuration, check your settings via a browser.</ListItem>
-              <ListItem>True 24 bit color support, review logs easily with the coloring.</ListItem>
+              <ListItem textSize={"1.8rem"}>Full fledged autosuggestion support, (you can even roll your own)</ListItem>
+              <ListItem textSize={"1.8rem"}>Sane scripting, stop feeling like writting perl, shell scripts now makes sense.</ListItem>
+              <ListItem textSize={"1.8rem"}>Web based configuration, check your settings via a browser.</ListItem>
+              <ListItem textSize={"1.8rem"}>True 24 bit color support, review logs easily with the coloring.</ListItem>
             </List>
             <Footer>2</Footer>
           </Slide>
@@ -86,22 +92,54 @@ export default class FishShellSpectacle extends React.Component {
           <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
             <Header>4</Header>
             <b>Sane scripting, stop feeling like writting perl, shell scripts now makes sense.</b>
-            <iframe src="http://asciinema.org/a/1c5dab7zpb9crvlu0u0j59lwt" />
+
+            <Asciinema id={"1c5dab7zpb9crvlu0u0j59lwt"} />
+
             <Footer>4</Footer>
           </Slide>
 
           <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
             <Header>5</Header>
             <b>Web based configuration, check your settings via a browser.</b>
-            <iframe src="http://asciinema.org/a/1c5dab7zpb9crvlu0u0j59lwt" />
+
+            <Asciinema id={"1c5dab7zpb9crvlu0u0j59lwt"} />
+
             <Footer>5</Footer>
           </Slide>
 
           <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
-            <Header>3</Header>
-            que tal estamos?
-            <img src={fisherman} />
-            <Footer>3</Footer>
+            <Header>6</Header>
+            <h2>But wait, we have a package manager!.</h2>
+            <Appear fid="1"><span>Introducing...</span></Appear>
+            <Appear fid="2"><span>Fisherman!</span></Appear>
+            <br />
+            <Appear fid="3"><img src={fisherman} /></Appear>
+            <Appear fid="4"><img src="http://fisherman.sh/images/fisherman-logo.svg" /></Appear>
+            <Footer>6</Footer>
+          </Slide>
+
+          <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
+            <Header>7</Header>
+            <img src={fisherman_website} />
+            <Footer>7</Footer>
+          </Slide>
+
+          <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
+            <Header>8</Header>
+            <img src={hackerman} />
+            <Footer>8</Footer>
+          </Slide>
+
+          <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
+            <Header>9</Header>
+            <img src={bart_hand_testing} />
+            <Footer>9</Footer>
+          </Slide>
+
+          <Slide transition={["slide"]} maxWidth={width} maxHeight={height}>
+            <Header>10</Header>
+            <img src={fsociety} />
+            <Footer>10</Footer>
           </Slide>
         </Deck>
       </Spectacle>
