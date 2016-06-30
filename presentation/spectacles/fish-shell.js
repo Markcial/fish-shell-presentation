@@ -1,15 +1,15 @@
 import React from "react";
 
-import fish from 'url-loader?mimetype=image/png!./media/blinky.png';
-import fisherman from 'url-loader?mimetype=image/png!./media/Horatio_McCallister.png';
-import fisherman_website from 'url-loader?mimetype=image/png!./media/fisherman_website.png';
-import fish_config_screenshot from 'url-loader?mimetype=image/png!./media/fish_config.png';
-import bart_hand_testing from 'url-loader?mimetype=image/gif!./media/stop_testing_by_hand.gif';
-import hackerman from 'url-loader?mimetype=image/gif!./media/hackerman.gif';
-import throwing_up_rainbows from 'url-loader?mimetype=image/gif!./media/throwing_up_rainbows.gif';
-import nerdy_lisa from 'url-loader?mimetype=image/gif!./media/nerdy_lisa.gif';
-import fish_themes from 'url-loader?mimetype=image/png!./media/fisher_themes.png';
-import fsociety from 'url-loader?mimetype=image/gif!./media/fsociety.gif';
+let fish = '/assets/blinky.png';
+let fisherman = '/assets/Horatio_McCallister.png';
+let fisherman_website = '/assets/fisherman_website.png';
+let fish_config_screenshot = '/assets/fish_config.png';
+let bart_hand_testing = '/assets/stop_testing_by_hand.gif';
+let hackerman = '/assets/hackerman.gif';
+let throwing_up_rainbows = '/assets/throwing_up_rainbows.gif';
+let nerdy_lisa = '/assets/nerdy_lisa.gif';
+let fish_themes = '/assets/fisher_themes.png';
+let fsociety = '/assets/fsociety.gif';
 
 // Import theme
 import createTheme from "spectacle/lib/themes/default";

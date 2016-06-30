@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from 'url?limit=10000&mimetype=image/svg+xml!assets/corporative/logo.svg';
 import {connect} from "react-redux";
+
+let logo = '/assets/logo.svg';
 
 export class Datestamp extends React.Component {
   constructor(props) {

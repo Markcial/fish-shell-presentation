@@ -17,6 +17,8 @@ app.use(require("webpack-dev-middleware")(compiler, {
 
 app.use(require("webpack-hot-middleware")(compiler));
 
+app.use('/assets', express.static(__dirname + '/assets'));
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
